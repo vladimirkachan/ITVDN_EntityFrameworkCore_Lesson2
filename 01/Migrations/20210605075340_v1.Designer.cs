@@ -9,7 +9,7 @@ using _01;
 namespace _01.Migrations
 {
     [DbContext(typeof(ContextApp))]
-    [Migration("20210605061357_v1")]
+    [Migration("20210605075340_v1")]
     partial class v1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,8 +30,8 @@ namespace _01.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

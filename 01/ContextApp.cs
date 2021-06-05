@@ -18,5 +18,10 @@ namespace _01
         {
             optionsBuilder.UseSqlServer(@"Server=.\;Database=TestDB_001;Trusted_Connection=True;");
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Tablet>(); 
+            //modelBuilder.Ignore<Company>();
+        }
     }
 }
