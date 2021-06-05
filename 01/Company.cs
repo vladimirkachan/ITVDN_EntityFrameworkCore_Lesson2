@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace _01
 {
-    class Company
+    public class Company
     {
-      
+        
     }
 }

@@ -9,7 +9,7 @@ namespace _01
 {
     public class ContextApp : DbContext
     {
-        public DbSet<Phone> Phones {get; set;}
+        public DbSet<Phone> Phones { get; set; }
         public ContextApp()
         {
             Database.EnsureDeleted();
